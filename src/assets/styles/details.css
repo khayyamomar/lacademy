@@ -1,0 +1,78 @@
+.service-details {
+  background: linear-gradient(
+    180deg,
+    #e9dfff 0%,
+    #f3eeff 25%,
+    #fbfaff 55%,
+    #ffffff 100%
+  );
+  min-height: 100vh;
+  padding-bottom: 80px;
+}
+
+.service-details .service-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #23272f;
+  padding-top: 60px;
+  margin-bottom: 8px;
+}
+
+.service-details .package-subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: #23272f;
+  margin-top: 32px;
+  margin-bottom: 24px;
+}
+
+.service-details .package-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.service-details .package-item {
+  background-color: rgba(63, 8, 244, 0.05);
+  border-radius: 8px;
+  padding: 16px 20px;
+}
+
+.service-details .item-label {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  color: #3f08f4;
+  margin-bottom: 4px;
+}
+
+.service-details .item-text {
+  font-size: 15px;
+  font-weight: 400;
+  color: #444a56;
+  line-height: 1.5;
+}
+
+.service-details .package-price {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3f08f4;
+  margin-top: 24px;
+}
+
+.service-details .package-contact {
+  font-size: 15px;
+  font-weight: 500;
+  color: #23272f;
+  margin-top: 12px;
+}
+
+.service-details .contact-phone {
+  color: #3f08f4;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.service-details .contact-phone:hover {
+  text-decoration: underline;
+}
