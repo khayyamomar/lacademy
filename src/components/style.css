@@ -51,6 +51,10 @@
   color: #23272F;
 }
 
+.header .navbar-list-container ul li a:hover{
+  color: #3F08F4;
+}
+
 
 
 .service-list img {
