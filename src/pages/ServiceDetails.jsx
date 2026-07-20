@@ -1,34 +1,54 @@
 import { useParams } from "react-router-dom";
-import{ servicesData} from "../data/serviceData"
-// import "./service-details.css";
+import { servicesData } from "../data/serviceData";
+import { useEffect } from "react";
 
 const ServiceDetails = () => {
   const { name } = useParams();
   const service = servicesData[name];
 
+    useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [name]);
+
   if (!service) {
     return (
       <div className="service-details">
+        <div className="main-container">
+
         <div className="page-container">
           <p>Xidmət tapılmadı.</p>
         </div>
+        </div>
+
       </div>
     );
   }
 
   return (
     <div className="service-details">
+      <div className="main-container">
+
       <div className="page-container">
         <h1 className="service-title">{service.title}</h1>
 
+        {service.packages.length === 0 && (
+          <p className="no-content">
+            Bu xidmət haqqında məlumat tezliklə əlavə olunacaq.
+          </p>
+        )}
+
         {service.packages.map((pkg, pkgIndex) => (
           <div className="service-package" key={pkgIndex}>
-            {pkg.subtitle && <h2 className="package-subtitle">{pkg.subtitle}</h2>}
+            {pkg.subtitle && (
+              <h2 className="package-subtitle">{pkg.subtitle}</h2>
+            )}
 
             <div className="package-items">
               {pkg.items.map((item, itemIndex) => (
                 <div className="package-item" key={itemIndex}>
-                  {item.label && <span className="item-label">{item.label}</span>}
+                  {item.label && (
+                    <span className="item-label">{item.label}</span>
+                  )}
                   <p className="item-text">{item.text}</p>
                 </div>
               ))}
@@ -38,10 +58,14 @@ const ServiceDetails = () => {
               <p className="package-price">Qiymət: {pkg.price}</p>
             )}
 
+            {pkg.note && (
+              <p className="package-note"><span>Qeyd:</span> {pkg.note}</p>
+            )}
+
             <p className="package-contact">
               Ətraflı məlumat və müraciət üçün whatsapp-a keçid edin:{" "}
               
-               <a  href={`https://wa.me/994${pkg.phone.replace(/\s/g, "")}`}
+              <a  href={`https://wa.me/994${pkg.phone.replace(/\s/g, "")}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="contact-phone"
@@ -52,6 +76,8 @@ const ServiceDetails = () => {
           </div>
         ))}
       </div>
+      </div>
+
     </div>
   );
 };

@@ -1,5 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import RightArrow from "../../assets/icons/right-arrow.svg?react";
+import WhiteArrow from "../../assets/icons/white-arrow.svg?react";
+
 import "./style.css";
 const Services = () => {
   const navigate = useNavigate();
@@ -38,7 +40,7 @@ const Services = () => {
   return (
     <div className="services-cards">
       {services?.map((service) => (
-        <div className="service-card" key={service.id}>
+        <div className="service-card" key={service.id}  >
           <div className="name-container">
             <h4>{service.name}</h4>
           </div>
@@ -47,7 +49,7 @@ const Services = () => {
             className="service-route-container"
             onClick={() => navigate(`/services/${service.key}`)}
           >
-            {/* <span className="route-text">Ətraflı </span> */}
+            <span className="route-text">Ətraflı <WhiteArrow/>  </span>
             <RightArrow className="arrow-icon" />
           </div>
         </div>

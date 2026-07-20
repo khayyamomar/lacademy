@@ -34,18 +34,9 @@ const Header = () => {
               Xidmətlərimiz
             </NavLink>
 
-            {/* <img src={DownArrow} alt="" />
-
-            {open && (
-              <div className="dropdown">
-                <NavLink to="/services/visa">Viza</NavLink>
-                <NavLink to="/services/translation">Tərcümə</NavLink>
-                <NavLink to="/services/consulting">Konsultasiya</NavLink>
-              </div>
-            )} */}
           </li>
           <li>
-            <NavLink to="/academy">LAcademy</NavLink>
+            <NavLink to="/services/lacademy">LAcademy</NavLink>
           </li>
         </ul>
       </nav>
