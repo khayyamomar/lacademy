@@ -49,7 +49,7 @@ const Home = () => {
           </div>
         </div>
         <div className="contact-us-container" onClick={handleWhatsAppClick}>
-          <h4>Bizə müraciət edin</h4>
+          <h4>Bizə Müraciət Edin</h4>
           <div className="contact-wp-container">
             <h6>Whatsapp-a yazın</h6>
             <WpLogo />

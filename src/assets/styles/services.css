@@ -2,22 +2,10 @@
    min-height: 400px;
   display: flex;
   align-items: center;
-  background: linear-gradient(
-    180deg,
-    #e9dfff 0%,
-    #f3eeff 25%,
-    #fbfaff 55%,
-    #ffffff 100%
-  );
+ 
 }
 
 
 .service-details{
-    background: linear-gradient(
-    180deg,
-    #e9dfff 0%,
-    #f3eeff 25%,
-    #fbfaff 55%,
-    #ffffff 100%
-  ); 
+  
 }

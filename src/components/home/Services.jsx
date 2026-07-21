@@ -38,6 +38,8 @@ const Services = () => {
     },
   ];
   return (
+    <div className="services-container" style={{marginTop:"40px"}} >
+       <h3>Xidmətlərimiz</h3>
     <div className="services-cards">
       {services?.map((service) => (
         <div className="service-card" key={service.id}  >
@@ -55,6 +57,8 @@ const Services = () => {
         </div>
       ))}
     </div>
+    </div>
+
   );
 };
 

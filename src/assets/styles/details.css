@@ -1,11 +1,5 @@
 .service-details {
-  background: linear-gradient(
-    180deg,
-    #e9dfff 0%,
-    #f3eeff 25%,
-    #fbfaff 55%,
-    #ffffff 100%
-  );
+  
   min-height: 100vh;
   padding-bottom: 80px;
 }
@@ -14,7 +8,7 @@
   margin-top: 60px;
 }
 
-.service-details .service-package:nth-child(1){
+.service-details .service-package:first-of-type {
   margin-top: 0;
 }
 
@@ -22,7 +16,7 @@
   font-size: 48px;
   font-weight: 700;
   color: #23272f;
-  padding-top: 60px;
+  margin-top: 40px;
   /* margin-bottom: 8px; */
 }
 
@@ -41,7 +35,7 @@
 }
 
 .service-details .package-item {
-  background-color: rgba(63, 8, 244, 0.05);
+  background-color: white;
   border-radius: 8px;
   padding: 16px 20px;
 }
@@ -50,21 +44,21 @@
   display: block;
   font-size: 28px;
   font-weight: 500;
-  color: #3F08F4;
+  color: #1D42CE;
   margin-bottom: 12px;
 }
 
 .service-details .item-text {
   font-size: 24px;
   font-weight: 400;
-  color: #444a56;
+  color: #23272F;
   line-height: 1.5;
 }
 
 .service-details .package-price {
   font-size: 16px;
   font-weight: 600;
-  color: #3f08f4;
+  color: #1D42CE;
   margin: 30px 0;
 }
 
@@ -75,7 +69,7 @@
 }
 
 .service-details .package-note span{
-  color: #3F08F4;
+  color: #1D42CE;
   
 }
 
@@ -87,7 +81,7 @@
 }
 
 .service-details .contact-phone {
-  color: #3f08f4;
+  color: #1D42CE;
   font-weight: 500;
   text-decoration: none;
 }

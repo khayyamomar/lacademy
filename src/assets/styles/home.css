@@ -5,13 +5,7 @@
   min-height: 400px;
   display: flex;
   align-items: center;
-  background: linear-gradient(
-    180deg,
-    #e9dfff 0%,
-    #f3eeff 25%,
-    #fbfaff 55%,
-    #ffffff 100%
-  );
+ 
 }
 
 .home-page .home-context {
@@ -26,7 +20,7 @@ margin-top: 40px;
 }
 
 .home-page .home-context h1 strong {
-  color: #3f08f4;
+  color: #1D42CE;
   font-weight: 700;
 }
 
@@ -38,7 +32,7 @@ margin-top: 40px;
   flex-direction: column;
 }
 
-.home-page .services-container h3 {
+ .services-container h3 {
   font-size: 48px;
   font-weight: 500;
   color: #23272f;
@@ -63,14 +57,14 @@ margin-top: 40px;
 }
 
 .home-page .home-page-btns-container .services-btn {
-  background-color: #3f08f4;
+  background-color: #1D42CE;
   color: white;
 }
 
 .home-page .home-page-btns-container .academy-btn {
-  background: rgba(63, 8, 244, 0.06);
+  background:white;
   margin-left: 48px;
-  color: #3f08f4;
+  color: #1D42CE;
 }
 
 .home-page .home-page-btns-container button svg {
@@ -82,18 +76,21 @@ margin-top: 40px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: white;
+  padding: 32px 24px;
+  border-radius: 6px;
 }
 
 .home-page .contact-us-container h4 {
   font-size: 48px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .home-page .contact-us-container .contact-wp-container {
   margin-top: 62px;
   padding: 12px 24px;
   border-radius: 6px;
-  background-color: #3f08f4;
+  background-color: #1D42CE;
   color: white;
   display: flex;
   align-items: center;

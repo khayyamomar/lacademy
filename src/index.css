@@ -2,7 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:sans-serif;
+   font-family: "Source Sans Pro";
+ 
+}
+body{
+  background: rgba(181, 212, 255, 0.25); /* 0.25 = 25% */
 }
 .main-container{
   padding: 20px 40px;
