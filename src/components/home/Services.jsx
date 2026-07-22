@@ -49,7 +49,14 @@ const Services = () => {
 
           <div
             className="service-route-container"
-            onClick={() => navigate(`/services/${service.key}`)}
+            onClick={() => {
+              if(service.key==="lacademy"){
+                navigate(`/lacademy`)
+              }
+              else {
+                navigate(`/services/${service.key}`)
+              }
+            }}
           >
             <span className="route-text">Ətraflı <WhiteArrow/>  </span>
             <RightArrow className="arrow-icon" />

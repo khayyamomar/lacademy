@@ -36,7 +36,7 @@ const Header = () => {
 
           </li>
           <li>
-            <NavLink to="/services/lacademy">LAcademy</NavLink>
+            <NavLink to="/lacademy">LAcademy</NavLink>
           </li>
         </ul>
       </nav>

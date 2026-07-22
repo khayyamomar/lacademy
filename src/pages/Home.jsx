@@ -33,7 +33,7 @@ const Home = () => {
               </button>
               <button
                 className="academy-btn"
-                onClick={() => navigate("services/lacademy")}
+                onClick={() => navigate("/lacademy")}
               >
                 LAcademy
                 <BlueArrow className="arrow-icon" />

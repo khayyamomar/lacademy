@@ -4,6 +4,7 @@ import MainLayout from '../layouts/MainLayout'
 import AboutUs from '../pages/AboutUs'
 import ServicesPage from '../pages/ServicesPage'
 import ServiceDetails from '../pages/ServiceDetails'
+import LAcademy from '../pages/LAcademy'
 
 const Routing = () => {
   return (
@@ -13,6 +14,7 @@ const Routing = () => {
         <Route path='/about' element={<AboutUs/>} />
         <Route path='/services' element={<ServicesPage/>} />
         <Route path='/services/:name' element={<ServiceDetails/>} />
+        <Route path='/lacademy' element={<LAcademy/>} />
       </Route>
     </Routes>
   )
