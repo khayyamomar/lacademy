@@ -44,7 +44,6 @@ const Home = () => {
 
         <div>
           <div className="services-container">
-            <h3>Xidmətlərimiz</h3>
             <Services />
           </div>
         </div>
