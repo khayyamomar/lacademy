@@ -57,6 +57,7 @@
 
 
 
+
 .service-list img {
   margin-left: 12px;
 }
@@ -71,6 +72,8 @@
 .header .navbar-list-container ul li a.active {
   color: #1D42CE;
 }
+
+
 
 
 
@@ -148,3 +151,88 @@ margin: 40px 0;
 }
 
 
+
+
+.header .menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+/* --- Mobil açılan menyu --- */
+
+.mobile-menu {
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  transition: max-height 0.35s ease;
+}
+
+.mobile-menu.open {
+  max-height: 400px;
+  border-top: 1px solid #e6e9f4;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu ul li {
+  margin-bottom: 28px;
+}
+
+.mobile-menu ul li:last-child {
+  margin-bottom: 0;
+}
+
+.mobile-menu ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #23272f;
+}
+
+.mobile-menu ul li a.active {
+  color: #1d42ce;
+}
+
+@media screen and (max-width: 1200px) {
+  .header .navbar-list-container ul li {
+    margin-left: 20px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .header .navbar-list-container {
+    display: none;
+  }
+
+  .header .menu-icon {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+
+
+  .footer .footer-all-container .footer-top{
+    flex-direction: column;
+  }
+
+  .address-container, .contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-container{
+    margin: 40px 0;
+  }
+}

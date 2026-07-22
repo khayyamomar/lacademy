@@ -106,3 +106,52 @@ margin-top: 40px;
 .home-page .contact-us-container .contact-wp-container svg {
   margin-left: 24px;
 }
+
+
+
+@media screen and (max-width:800px) {
+
+  .home-page .home-context{
+    margin-top: 20px;
+  }
+  .home-page .home-context h1{
+    font-size: 28px;
+  }
+
+  .home-page .home-page-btns-container{
+    margin-top: 40px;
+    flex-direction: column;
+  }
+
+  .home-page .home-page-btns-container button{
+    width: 100%;
+  }
+
+  .home-page .home-page-btns-container .academy-btn{
+    margin-top: 24px;
+    margin-left: 0;
+  }
+.home-page .services-container{
+  margin: 0;
+}
+
+.services-container h3{
+  font-size: 24px;
+}
+
+.home-page .contact-us-container{
+  margin-top: 40px;
+}
+
+.home-page .contact-us-container h4{
+  font-size: 24px;
+}
+
+.home-page .contact-us-container .contact-wp-container{
+  width: 100%;
+  justify-content: center;
+  margin-top: 30px;
+  height: 40px;
+}
+
+}

@@ -1,6 +1,6 @@
 .service-details {
   
-  min-height: 100vh;
+  /* min-height: 100vh; */
   padding-bottom: 80px;
 }
 
@@ -88,4 +88,36 @@
 
 .service-details .contact-phone:hover {
   text-decoration: underline;
+}
+
+
+@media screen and (max-width:800px) {
+
+  .service-details .service-title{
+    font-size: 28px;
+  }
+  .service-details .package-subtitle{
+    font-size: 24px;
+  }
+
+  .service-details .package-items{
+    gap: 24px;
+  }
+
+  .service-details .package-item{
+    padding: 24px;
+  }
+
+  .service-details .item-label{
+    font-size: 24px;
+  }
+
+  .service-details .item-text{
+    font-size: 16px;
+  }
+
+  .service-details .package-contact{
+    font-size: 16px;
+  }
+
 }
